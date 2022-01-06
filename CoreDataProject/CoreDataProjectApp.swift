@@ -15,7 +15,8 @@ struct CoreDataProjectApp: App {
         WindowGroup {
 //            ContentView()
 //            PredicateView()
-            DynamicallyFilteringView()
+//            DynamicallyFilteringView()
+            RelationshipsView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
