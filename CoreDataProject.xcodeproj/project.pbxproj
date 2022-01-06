@@ -15,6 +15,7 @@
 		3B4A4E02277A50040007F030 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4A4E01277A50040007F030 /* DataController.swift */; };
 		3B5EDF6927874279009D6D76 /* RelationshipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5EDF6827874279009D6D76 /* RelationshipsView.swift */; };
 		3B61AA492785767A00FC145C /* PredicateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61AA482785767A00FC145C /* PredicateView.swift */; };
+		3B6776372787744B00A78AFA /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6776362787744B00A78AFA /* FilteredList.swift */; };
 		3B7E2C812786F1A1000A6C1D /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E2C7F2786F1A1000A6C1D /* Singer+CoreDataClass.swift */; };
 		3B7E2C822786F1A1000A6C1D /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E2C802786F1A1000A6C1D /* Singer+CoreDataProperties.swift */; };
 		3B7E2C852786F371000A6C1D /* DynamicallyFilteringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E2C842786F371000A6C1D /* DynamicallyFilteringView.swift */; };
@@ -36,6 +37,7 @@
 		3B4A4E01277A50040007F030 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		3B5EDF6827874279009D6D76 /* RelationshipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationshipsView.swift; sourceTree = "<group>"; };
 		3B61AA482785767A00FC145C /* PredicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateView.swift; sourceTree = "<group>"; };
+		3B6776362787744B00A78AFA /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 		3B7E2C7F2786F1A1000A6C1D /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3B7E2C802786F1A1000A6C1D /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3B7E2C842786F371000A6C1D /* DynamicallyFilteringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicallyFilteringView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				3B4A4DF2277A4F910007F030 /* ContentView.swift */,
 				3B61AA482785767A00FC145C /* PredicateView.swift */,
 				3B7E2C842786F371000A6C1D /* DynamicallyFilteringView.swift */,
+				3B6776362787744B00A78AFA /* FilteredList.swift */,
 				3B5EDF6827874279009D6D76 /* RelationshipsView.swift */,
 				3B7E2C832786F1C7000A6C1D /* Datastore */,
 				3B4A4DF4277A4F920007F030 /* Assets.xcassets */,
@@ -192,6 +195,7 @@
 				3B7E2C8A27873D98000A6C1D /* Country+CoreDataClass.swift in Sources */,
 				3B4A4E02277A50040007F030 /* DataController.swift in Sources */,
 				3B4A4DF1277A4F910007F030 /* CoreDataProjectApp.swift in Sources */,
+				3B6776372787744B00A78AFA /* FilteredList.swift in Sources */,
 				3B7E2C8C27873D98000A6C1D /* Candy+CoreDataClass.swift in Sources */,
 				3BFC5975277BA44F00A2D5B4 /* Movie+CoreDataClass.swift in Sources */,
 				3B7E2C8B27873D98000A6C1D /* Country+CoreDataProperties.swift in Sources */,
