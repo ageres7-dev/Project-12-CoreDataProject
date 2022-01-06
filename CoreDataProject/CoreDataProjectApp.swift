@@ -14,7 +14,8 @@ struct CoreDataProjectApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            PredicateView()
+//            PredicateView()
+            DynamicallyFilteringView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
