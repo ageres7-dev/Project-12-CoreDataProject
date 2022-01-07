@@ -8,6 +8,19 @@
 import CoreData
 import SwiftUI
 
+enum Predicate: String {
+    case beginsWith = "BEGINSWITH"
+    case beginsWithNotCaseSensitive = "BEGINSWITH[c]"
+    case containsNotCaseSensitive = "CONTAINS[c]"
+    case contains = "CONTAINS"
+    case inPredicate = "IN"
+    case equals = "=="
+    case less = "<"
+    case more = ">"
+    
+    
+}
+
 struct FilteredList<T: NSManagedObject, Content: View>: View {
     @FetchRequest var fetchRequest: FetchedResults<T>
 
@@ -20,8 +33,26 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
         }
     }
     
-    init(filterKey: String, predicate: String, filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
-        _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K \(predicate) %@", filterKey, filterValue))
+    init(sortDescriptors: [NSSortDescriptor],
+        isInverse: Bool = false,
+         filterKey: String,
+         predicate: Predicate,
+         filterValue: String,
+         @ViewBuilder content: @escaping (T) -> Content
+         
+    ) {
+        let isInverseString = isInverse ? "NOT" : ""
+        _fetchRequest = FetchRequest(
+            sortDescriptors: sortDescriptors,
+            predicate: NSPredicate(format: "\(isInverseString) %K \(predicate.rawValue) %@", filterKey, filterValue)
+        )
+        
+        
+//        _fetchRequest = FetchRequest<T>(
+//            sortDescriptors: sortDescriptors,
+//            predicate: NSPredicate(format: "\(isInverseString) %K \(predicate.rawValue) %@", filterKey, filterValue)
+//        )
+        
         self.content = content
     }
 }
